@@ -16,7 +16,7 @@ reverseButton.addEventListener("click", function () {
   result.textContent = `Reversed string: ${reversedString}`;
 });
 
-/* color */
+/* recolor */
 
 const myColor = document.querySelector("#exampleColorInput");
 const targetElement = document.body;
