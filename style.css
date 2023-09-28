@@ -3,7 +3,7 @@
   grid-template-areas:
     "header header header"
     "main main main"
-     "main main main"
+    "main main main"
     "footer footer footer";
 }
 
@@ -13,24 +13,27 @@
 
 .main {
   grid-area: main;
-display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; 
+  flex-direction: column;
 }
 
 .input-container {
-display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-      max-width: 100vw;
+  max-width: 100vw;
   min-height: 80vh;
 }
 
+#inputText {
+  width: 50vw;
+}
+
 .resultContainer {
-display: flex;
-   flex-direction: column; 
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 
@@ -49,12 +52,11 @@ display: flex;
 .footer__color-picker {
   display: flex;
   align-items: center;
-  justify-content: flex-end; /* Этот стиль выравнивает содержимое по правому краю */
-  flex-grow: 1; /* Этот стиль размещает "Color picker" во всей доступной ширине */
+  justify-content: flex-end;
+  flex-grow: 1;
 }
 
 .footer__content label,
 .footer__content input {
   margin: 0;
 }
-
