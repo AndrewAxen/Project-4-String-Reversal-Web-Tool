@@ -1,0 +1,60 @@
+.wrapper {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "main main main"
+     "main main main"
+    "footer footer footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+}
+
+.input-container {
+display: flex;
+  justify-content: center;
+  align-items: center;
+      max-width: 100vw;
+  min-height: 80vh;
+}
+
+.resultContainer {
+display: flex;
+   flex-direction: column; 
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.footer__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding-block: 1.5rem;
+}
+
+.footer__color-picker {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Этот стиль выравнивает содержимое по правому краю */
+  flex-grow: 1; /* Этот стиль размещает "Color picker" во всей доступной ширине */
+}
+
+.footer__content label,
+.footer__content input {
+  margin: 0;
+}
+
